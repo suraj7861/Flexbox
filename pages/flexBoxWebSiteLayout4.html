@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Flexbox Example</title>
+        <style>
+            * {
+                box-sizing: border-box; 
+            }
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: row;
+                margin: 0;
+            }
+            .outer-col-1 {
+                background: #D7E8D4;
+                flex: 1;
+            }
+            .outer-col-2 {
+                display: flex;
+                flex-direction: column;
+                flex: 5;
+            }
+            .inner-row {
+                display: flex;
+                flex-direction: row;
+            }
+            .inner-col {
+                flex: 4;
+            }
+            .inner-row article {
+                min-height: 60vh;
+            }
+            .inner-row aside {
+                background: beige;
+                flex: 1;
+            }
+            header, footer {
+                background: yellowgreen;
+                height: 20vh;
+            }
+            header, footer, article, nav, aside {
+                padding: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="outer-col-1"><h1>navigation bar</h1></nav>
+        <div class="outer-col-2">
+            <header class="headerContainer"><h1>Header - Sample Flexbox Website Layout</h1></header>
+            <div class="inner-row">
+                <div class="inner-col">
+                    <article class="article">
+                        <h1>First Article</h1>
+                        <p>
+                            The United States of America (U.S.A. or USA), commonly known as the United States (US)
+                            or America, is a country primarily located in North America. It consists of 50 states, 
+                            a federal district, five major unincorporated territories, 326 Indian reservations, and 
+                            some minor possessions.
+                        </p>
+                        <h1>Second Article</h1>
+                        <p>
+                            Australia, officially the Commonwealth of Australia, is a sovereign country comprising 
+                            the mainland of the Australian continent, the island of Tasmania, and numerous smaller 
+                            islands.[13] It is the largest country by area in Oceania and the world's sixth-largest
+                            country. Australia's population of nearly 26 million,
+                        </p>
+                        <h1>Third Article</h1>
+                        <p>
+                            India, officially the Republic of India (Hindi: Bhārat Gaṇarājya),[23] is a country in 
+                            South Asia. It is the seventh-largest country by area, the second-most populous country, 
+                            and the most populous democracy in the world. Bounded by the Indian Ocean on the south, 
+                            the Arabian Sea on the southwest
+                        </p>
+                    </article>
+                    <footer class="footerContainer">
+                        <h1>Footer</h1></footer>
+                    </div>
+                    <aside class="asideContainer"><h1>aside</h1></aside>
+                </div>
+            </div>
+    </body>
+</html>
